@@ -1,3 +1,12 @@
+/* General */
+.loginButton {
+    background: linear-gradient(to bottom right, #FF7B4E 0%, #FF584E 100%);
+    border: 1px solid transparent;
+    border-radius: 100px;
+    padding: 13px 44px 14px 43px;
+}
+
+/* Header */
 .container {
     display: flex;
     padding: 54px 100px 53px 100px;
@@ -23,15 +32,28 @@
     gap: 25px;
 }
 
-
-#loginButton {
-    background-color: #FF7B4E;
-    border: 1px solid transparent;
-    border-radius: 100px;
-    padding: 13px 44px 14px 43px;
-}
-
 #logo {
     font-size: 20px;
     font-weight: 700;
+}
+
+#homeButton {
+    position: relative;
+    display: inline-block;
+    z-index: 1; 
+}
+
+#homeButton::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 25px;
+    height: 4px;
+    width: 35px;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    background-color: #C4C4C4;
+    z-index: -1;
 }
