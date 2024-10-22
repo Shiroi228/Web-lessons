@@ -1,3 +1,62 @@
-.upperMain {
+
+/* Main */
+main {
+    padding: 54px 100px 53px 100px;
     display: flex;
+    justify-content: space-between;
+}
+
+#exsploreTheWorld {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    background-color: rgba(255, 253, 253, 0.25);
+    border: 0px solid transparent;
+    border-radius: 15px;
+    padding: 11px 30px 12px 31px;  
+}
+
+#exploreTheNatural {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 82.5px;
+    
+}
+
+#exploreTheBeauty {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 37.5px;
+    margin-top: 30px;
+}
+
+#mainButton {
+    margin-top: 68px;
+    background: linear-gradient(to bottom right, #FF7B4E 0%, #FF584E 100%);
+    border: 0px solid transparent;
+    border-radius: 27px;
+    padding: 27px 47px 26px 48px;
+    color: #FEFEFE;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 37.5px;
+}
+
+.rightBox {
+    width: 50%;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#mainImage {
+    position: absolute;
+    max-width: none;
+    width: auto;
+    height: auto;
+    transform: scale(-2.6, 2.6);
+    bottom: 160px;
 }
