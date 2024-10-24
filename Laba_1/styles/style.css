@@ -51,9 +51,13 @@
     font-display: swap;
 }
 
+html {
+    background-color: black;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: black;
+    height: 1873px;
 }
 
 #upperFrame {
