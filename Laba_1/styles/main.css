@@ -49,7 +49,7 @@ main {
     overflow: visible;
     position: relative;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse;    
 }
 
 #mainImage {
