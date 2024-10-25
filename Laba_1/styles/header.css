@@ -1,11 +1,3 @@
-/* General */
-.loginButton {
-    background: linear-gradient(to bottom right, #FF7B4E 0%, #FF584E 100%);
-    border: 1px solid transparent;
-    border-radius: 100px;
-    padding: 13px 44px 14px 43px;
-}
-
 /* Header */
 .container {
     display: flex;
@@ -21,10 +13,6 @@
     font-weight: 500;
 }
 
-.nav {
-    display: flex;
-    gap: 80px;
-}
 
 .autorizationBlock {
     display: flex;

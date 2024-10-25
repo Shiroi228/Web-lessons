@@ -1,0 +1,30 @@
+footer {
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    background-color: rgba(246, 246, 246, 1);
+    width: 100%;
+    padding: 0 100px 44px 100px;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerButton {
+    color: rgba(15, 31, 28, 1);
+    background-color: rgba(246, 246, 246, 1);
+    opacity: 50%;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+
+#footerLogo {
+    color: rgba(255, 124, 78, 1);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: rgba(246, 246, 246, 1);
+}
