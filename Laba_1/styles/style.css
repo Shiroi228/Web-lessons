@@ -60,6 +60,19 @@ body {
     height: 1873px;
 }
 
+.loginButton {
+    background: linear-gradient(to bottom right, #FF7B4E 0%, #FF584E 100%);
+    border: 1px solid transparent;
+    border-radius: 100px;
+    padding: 13px 44px 14px 43px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav {
+    display: flex;
+    gap: 80px;
+}
+
 #upperFrame {
     background: linear-gradient(to bottom right, #428E5F 0%, #112120 100%);
     height: 951px;
@@ -67,5 +80,4 @@ body {
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
     color: #FFFFFF;
-
 }
