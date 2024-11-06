@@ -1,18 +1,19 @@
 aside {
+  width: 1440px;
   background-color: #f6f6f6;
   display: flex;
   justify-content: center;
   padding: 156px 156px 174px 156px;
 }
 
-.asideContainer {
+.aside__container {
   width: auto;
   height: auto;
   display: flex;
   gap: 68px;
 }
 
-#firstRow {
+.aside__first-row {
   color: #0f1f1c;
   font-weight: 500;
   font-size: 45px;
@@ -21,13 +22,13 @@ aside {
   max-width: 565px;
 }
 
-#secondRow {
+.aside__second-row {
   display: flex;
   gap: 33px;
   margin-bottom: 60px;
 }
 
-#thirdRow {
+.aside__third-row {
   opacity: 50%;
   color: #0f1f1c;
   font-weight: 500;
@@ -36,12 +37,12 @@ aside {
   margin-bottom: 30px;
 }
 
-#fourthRow {
+.aside__fourth-row {
   display: flex;
   gap: 8px;
 }
 
-#imageContainer {
+.aside__image-container {
   background-color: rgba(255, 170, 153, 1);
   width: 134px;
   height: 134px;
@@ -49,21 +50,21 @@ aside {
   border-radius: 100%;
 }
 
-#headerContainer {
+.aside__header {
   gap: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#firstRowCon {
+.aside__name {
   font-weight: 500;
   font-size: 33px;
   line-height: 49.5px;
   color: #0f1f1c;
 }
 
-#secondRowCon {
+.aside__location {
   font-weight: 400;
   font-size: 25px;
   line-height: 37.5px;
@@ -71,14 +72,14 @@ aside {
   opacity: 50%;
 }
 
-.star {
+.aside__star {
   width: 59px;
   height: 59px;
   display: flex;
   justify-content: center;
 }
 
-.starImage {
+.aside__star-image {
   width: 49px;
   height: 47px;
 }

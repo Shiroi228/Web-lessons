@@ -4,80 +4,80 @@
 @import url(footer.css);
 
 @font-face {
-    font-family: "Poppins";
-    font-weight: 700;
-    font-style: normal;
-    src: local("Poppins Bold"),
-         local("Poppins-Bold"),
-         url("../fonts/Poppins-Bold.woff2") format('woff2'),
-         url("../fonts/Poppins-Bold.woff") format('woff'),
-         url("../fonts/Poppins-Bold.eot") format('eot');
-    font-display: swap;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Poppins Bold"), local("Poppins-Bold"),
+    url("../fonts/Poppins-Bold.woff2") format("woff2"),
+    url("../fonts/Poppins-Bold.woff") format("woff"),
+    url("../fonts/Poppins-Bold.eot") format("eot");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Poppins";
-    font-weight: 600;
-    font-style: normal;
-    src: local("Poppins SemiBold"),
-         local("Poppins-SemiBold"),
-         url("../fonts/Poppins-SemiBold.woff2") format('woff2'),
-         url("../fonts/Poppins-SemiBold.woff") format('woff'),
-         url("../fonts/Poppins-SemiBold.eot") format('eot');
-    font-display: swap;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"),
+    url("../fonts/Poppins-SemiBold.woff2") format("woff2"),
+    url("../fonts/Poppins-SemiBold.woff") format("woff"),
+    url("../fonts/Poppins-SemiBold.eot") format("eot");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Poppins";
-    font-weight: 500;
-    font-style: normal;
-    src: local("Poppins Medium"),
-         local("Poppins-Medium"),
-         url("../fonts/Poppins-Medium.woff2") format('woff2'),
-         url("../fonts/Poppins-Medium.woff") format('woff'),
-         url("../fonts/Poppins-Medium.eot") format('eot');
-    font-display: swap;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Poppins Medium"), local("Poppins-Medium"),
+    url("../fonts/Poppins-Medium.woff2") format("woff2"),
+    url("../fonts/Poppins-Medium.woff") format("woff"),
+    url("../fonts/Poppins-Medium.eot") format("eot");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Poppins";
-    font-weight: 400;
-    font-style: normal;
-    src: local("Poppins Regular"),
-         local("Poppins-Regular"),
-         url("../fonts/Poppins-Regular.woff2") format('woff2'),
-         url("../fonts/Poppins-Regular.woff") format('woff'),
-         url("../fonts/Poppins-Regular.eot") format('eot');
-    font-display: swap;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Poppins Regular"), local("Poppins-Regular"),
+    url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff"),
+    url("../fonts/Poppins-Regular.eot") format("eot");
+  font-display: swap;
 }
 
 html {
-    background-color: black;
+  background-color: black;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    height: 1873px;
+  font-family: "Poppins", sans-serif;
+  height: 1873px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.loginButton {
-    background: linear-gradient(to bottom right, #FF7B4E 0%, #FF584E 100%);
-    border: 1px solid transparent;
-    border-radius: 100px;
-    padding: 13px 44px 14px 43px;
-    color: rgba(255, 255, 255, 1);
+.header__login {
+  background: linear-gradient(to bottom right, #ff7b4e 0%, #ff584e 100%);
+  border: 1px solid transparent;
+  border-radius: 100px;
+  padding: 13px 44px 14px 43px;
+  color: rgba(255, 255, 255, 1);
 }
 
-.nav {
-    display: flex;
-    gap: 80px;
+.header__nav {
+  display: flex;
+  gap: 80px;
 }
 
-#upperFrame {
-    background: linear-gradient(to bottom right, #428E5F 0%, #112120 100%);
-    height: 951px;
-    border: 0px solid transparent;
-    border-top-left-radius: 90px;
-    border-top-right-radius: 90px;
-    color: #FFFFFF;
+.upper-frame {
+  width: 1440px;
+  background: linear-gradient(to bottom right, #428e5f 0%, #112120 100%);
+  height: 951px;
+  border: 0px solid transparent;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  color: #ffffff;
 }
