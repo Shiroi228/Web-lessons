@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: 400;
+  font-style: normal;
+  src: local("SF Pro Display Regular"), local("SF-Pro-Display-Regular"),
+    url("../fonts/SF-Pro-Display-Regular.woff2") format("woff2"),
+    url("../fonts/SF-Pro-Display-Regular.woff") format("woff"),
+    url("../fonts/SF-Pro-Display-Regular.eot") format("eot");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: 600;
+  font-style: normal;
+  src: local("SF Pro Display Medium"), local("SF-Pro-Display-Medium"),
+    url("../fonts/SF-Pro-Display-Medium.woff2") format("woff2"),
+    url("../fonts/SF-Pro-Display-Medium.woff") format("woff"),
+    url("../fonts/SF-Pro-Display-Medium.eot") format("eot");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: 700;
+  font-style: normal;
+  src: local("SF Pro Display Bold"), local("SF-Pro-Display-Bold"),
+    url("../fonts/SF-Pro-Display-Bold.woff2") format("woff2"),
+    url("../fonts/SF-Pro-Display-Bold.woff") format("woff"),
+    url("../fonts/SF-Pro-Display-Bold.eot") format("eot");
+  font-display: swap;
+}
+
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+main {
+  width: 241px;
+  height: 345px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.04), 0px 2px 4px rgba(96, 97, 112, 0.16);
+}
+
+.upper-section {
+  height: 207px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: white;
+  position: relative;
+}
+
+.lower-section {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: white;
+  height: 138px;
+}
+
+.image1 {
+  width: 100%;
+  height: auto;  
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.block {
+  width: 56px;
+  height: 56px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 170px;
+  top: 150px;
+  box-shadow: 0px 0px 1px rgba(40, 41, 61, 0.04), 0px 2px 4px rgba(96, 97, 112, 0.16);
+
+}
+
+.block__number {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(18, 18, 18, 1);
+}
+
+.block__text {
+  color: rgba(18, 18, 18, 1);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.lower-section {
+  display: flex;
+  justify-content: center;
+}
+
+.lower-section__container {
+  width: 209px;
+  height: 138px;
+}
+
+.container__text-1 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  color: rgba(149, 147, 147, 1);
+  margin-bottom: 4px;
+}
+
+.container__text-2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: rgba(18, 18, 18, 1);
+  margin-bottom: 4px;
+}
+
+.container__main-block {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.main-block__icon {
+  border: 1px solid rgba(0, 110, 255, 1);
+  border-radius: 3px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  transform: scale(0.5, 0.5);
+}
