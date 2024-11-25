@@ -1,0 +1,76 @@
+@media screen and (max-width: 1300px) {
+    main {
+        width: 375px;
+        height: 984px;
+    }
+
+    .logo {
+        font-size: 18px;
+        line-height: 27px;
+        margin: 18px 0 41px 26px;
+    }
+
+    .main__contant {
+        display: flex;
+        flex-direction: column;
+        gap: 52px;
+        margin-left: 26px;
+        margin-right: 0px;
+    }
+
+    .content__left__first-el {
+        font-size: 26px;
+        line-height: 39px;
+    }
+    
+    .content__left__second-el {
+        font-size: 21px;
+        line-height: 31.5px;
+        margin-bottom: 32px;
+    }
+
+    .third-el__left {
+        font-size: 14px;
+    }
+
+    .third-el__left__second-row {
+        line-height: 21px;
+        margin-top: 6px;
+    }
+
+    .third-el__right {
+        display: none;
+    }
+
+    .contant__right__first-section {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        margin-bottom: 48px;
+    }
+
+    .first-section__title {
+        display: none;
+    }
+
+    .input {
+        width: 315px;
+        padding-left: 30px;
+    }
+
+    .first-section__button {
+        width: 315px;
+        padding: 18px 114px 17px 134px;
+    }
+
+    .contant__right__second-section {
+        margin-bottom: 38px;
+    }
+
+    .contant__right__third-section {
+        display: flex;
+        justify-content: center;
+        gap: 19px;
+    }
+
+}
