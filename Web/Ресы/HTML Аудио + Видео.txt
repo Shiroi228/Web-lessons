@@ -1,0 +1,27 @@
+Вставить аудио файл + управление к нему
+    <audio src="C:\Хла№\Web\Сайты\CCS_v\Jojo - Ayaya.mp3" controls></audio>
+Вставить видео файл + управление к нему
+Дефолт
+    <video src="C:\Хла№\Web\Сайты\CCS_v\hentai (WebM Video).mp4" controls></video>
+С исключениями
+    <video width="720" controls>
+        <source src="C:\Хла№\Web\Сайты\CCS_v\hentai (WebM Video).mp4" type="video/WebM"> 
+        <source src="C:\Хла№\Web\Сайты\CCS_v\hentai (WebM Video).mp4" type="video/mp4">
+        Бля, не работает нихуя!
+    </video>
+    <!-- controls - стандартный браузерный контроллер аудио и видео -->
+    <!-- width - размер видео -->
+// Source - исключение. Если не поддерживается формат файла, то используем другой.
+
+    <audio src="C:\Хла№\Web\Сайты\CCS_v\Jojo - Ayaya.mp3" loop controls></audio>
+    <!-- loop - атрибут зацикливания -->
+
+    <video src="C:\Хла№\Web\Сайты\CCS_v\hentai (WebM Video).mp4" muted autoplay width="720" controls></video>
+    <!-- autoplay - атрибут автовоспроизведения, в некоторых браузерах не работает.
+    Но если добавить атрибут muted, то оно будет работать, но без звука -->
+
+    <video src="C:\Хла№\Web\Сайты\CCS_v\hentai (WebM Video).mp4" poster="https://img2.fonwall.ru/o/pp/vodopad-skaly-potok.jpg?route=mid&amp;h=750" width="720" controls></video>
+    <!-- poster - атрибут превью -->
+
+    <video src="C:\Хла№\Web\Сайты\CCS_v\hentai (WebM Video).mp4" preload="metadata" poster="https://img2.fonwall.ru/o/pp/vodopad-skaly-potok.jpg?route=mid&amp;h=750" width="720" controls></video>
+    <!-- preload - атрибут предзагрузки. auto - всё, metadata - некоторая инфа, none - ничего -->

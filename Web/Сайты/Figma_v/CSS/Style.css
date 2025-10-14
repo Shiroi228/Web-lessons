@@ -1,0 +1,94 @@
+
+html, body{
+    background-color: rgb(255, 246, 237);
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    color: #424551;
+
+}
+
+.wrapper{
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1260px;
+    padding: 0 15px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+.button{
+    letter-spacing: 0.5px;
+    line-height: 52px;
+    color: #FFFFFF;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+    font-weight: 700;
+    padding: 0 40px;
+    white-space: nowrap;
+}
+
+.logo {
+}
+
+/* ------------------------------------------------------ */
+
+.header {
+    font-weight: 700;
+}
+.header__top {
+}
+.header__top--inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    margin-right: 60px;
+}
+
+.header__nav {
+    margin-right: auto;
+}
+.header__nav--list {
+    display: flex;
+
+}
+.header__nav--list_item {
+    margin-right: 40px;
+}
+
+.header__nav--list_item:last-child{
+    margin-right: 0px;
+
+}
+
+.header__nav--link {
+    line-height: 160%;
+    white-space: nowrap;
+
+}
+.header__btn--box {
+    display: flex;
+    
+
+}
+.header__top--btn {
+    
+}
+.button {
+}
+.header__user {
+    display: flex;
+    align-items: center;
+}
+.header__user--btn {
+    white-space: nowrap;
+}
+.header__body {
+}
+
+/* ----------------------------------------------------- */

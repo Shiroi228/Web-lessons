@@ -1,0 +1,128 @@
+
+.container{
+    background-color: gray;
+}
+
+.button{
+    
+    width: 300px;
+    height: 100px;
+    position: relative;
+    left: 5%;
+    font-weight: 600;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+    color: aliceblue;
+
+}
+
+/* Псевдокласс (:hover) - действие при наведении на объект */
+.button:hover{
+    background-color: aqua;
+    border-radius: 50px;
+
+}
+
+.z1{
+
+/*  Плавный переход из одного состояния в другое.
+<<  transition: ;  >>
+    Относится к (.button:hover) 
+    Плавно меняется цвет + форма*/
+    transition-duration: 0.5s ;
+/* Идёт как первый параметр */
+}
+
+.z2{
+
+/*  Плавный переход из одного состояния в другое.
+    Относится к (.button:hover)
+    Плавно меняется только форма*/
+    
+    transition: border-radius 0.5s ;
+}
+
+
+.z3{
+
+/*  Плавный переход из одного состояния в другое.
+    Относится к (.button:hover)
+    Плавно меняется только после удержания курсора в течении 1сек*/
+    
+    transition-duration: 0.5s ;
+
+    transition-delay: 1s ;
+/* Идёт как второй параметр */
+}
+
+.z3_2{
+
+/*  Плавный переход из одного состояния в другое.
+    Относится к (.button:hover)
+    Плавно меняется сначала форма, потом цвет*/
+    
+    transition: border-radius 0.5s, background-color 0.5s 0.5s;
+
+}
+
+.z4{
+/* Тоже самое, что и z3_2, но в другом виде */
+    transition-duration: 3s, 3s;
+    transition-property: border-radius, background-color;
+    transition-delay: 0s, 3s;
+    /* transition-timing-function: ; */
+}
+/* ----------------------------------------------------- */
+
+.block{
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+}
+
+.transition:hover .block{
+    width: 100%;
+}
+
+
+/* transition-timing-function - вид скорости анимации */
+/* ease - поумолчанию */
+.blue{
+    background-color: rgb(88, 88, 245);
+    transition-timing-function: ease;
+}
+
+.red{
+    background-color: rgb(241, 90, 90);
+    transition-timing-function: ease-in;
+
+}
+
+.purple{
+    background-color: purple;
+    transition-timing-function: ease-out;
+
+}
+
+.orange{
+    background-color: orange;
+    transition-timing-function: ease-in-out;
+
+}
+
+.black{
+    background-color: black;
+    transition-timing-function: linear;
+
+}
+
+.DPRO {
+    background-color: rgb(43, 255, 0);
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.grey{
+    background-color: rgb(167, 167, 167);
+    transition-timing-function: cubic-bezier(0.375, 0.82, 0.165, 1);
+
+}

@@ -1,0 +1,19 @@
+    <div class="zxc"></div>
+    <div class="zxc"></div>
+    <div id="id3"></div>
+    <div id="id4"></div>
+    <div style="width: 1000px; height: 100px; background-color: aqua;"></div>
+    <div title="Описание Тайтл Элемента">Тайтл Элемент</div>
+    <label>
+        <input type="text" tabindex="1">
+        <input type="text" tabindex="2">
+        <input type="text" tabindex="3">
+        <input type="text" tabindex="4">
+        <input type="text" tabindex="5">
+    </label>
+
+    <!-- Атрибут "id" нужен для обращения к определенному блоку, стилизовать, писать под них скрипты или функционал. Имя "id" должно быть уникальным. Имя не может называться с цифры (не точно)
+    Атрибут "class" нужен для обращения к определенному блоку, стилизовать, писать под них скрипты или функционал. Имя "class" может повторяться.
+    Атрибут "style" позволяет задавать стиль объекту через html. 
+    Атрибут "title" описание элемента
+    Атрибут "tabindex" для переключения Tab`ом по окнам. "n" - очерёдность -->

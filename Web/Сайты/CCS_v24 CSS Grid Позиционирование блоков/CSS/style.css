@@ -1,0 +1,277 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+/* .wrapper {
+    padding: 50px;
+    min-height: 100%;
+} */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid {
+    margin-bottom: 200px;
+    padding-bottom: 200px;
+    border-bottom: 10px solid #363636;
+    min-height: 100vh;
+}
+
+.item {
+    border: 5px dashed #444;
+    font-size: 40px;
+    padding: .8em;
+    text-align: center;
+}
+
+/* =========================================================== */
+
+.grid-1{
+    display: grid;
+/* Кол-во столбцов */
+/* fr - ед.измерения (доля), забирает всё оставшееся пространство.
+Если поставить во все места, то растояние разделится поровну */
+    grid-template-columns: 200px 1fr 200px;
+/* Даёт две доли второй колонке */
+    grid-template-columns: 1fr 2fr 1fr;
+/* Вторая колонка имеет минимальное и максимальное значение */
+    grid-template-columns: 200px minmax(100px, 1fr) 200px;
+/* auto выдаёт столько места, сколько нужно для контента внутри блока */
+    grid-template-columns: 200px auto 200px;
+/* колонка может занимать сколько угодно места, но не больше (400px)*/
+    grid-template-columns: 200px fit-content(400px) 200px;
+/* позволяет повторить одно и тоже значение несколько раз */
+    grid-template-columns: repeat(3, 1fr);
+/* Кол-во строк */
+    grid-template-rows: auto auto;
+/* Короткая запись rows и columns*/
+    grid-template: auto auto / repeat(3, 1fr);
+}
+
+/* ============================================================== */
+/* Настраивваем общий вид сайта */
+.grid-2{
+    display: grid;
+    grid-template: 1fr 5fr 2fr / repeat(1fr, 300px);
+/* Обозначаем расположение элементов на сайте */
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+}
+/* Главные элементы сайта */
+.grid-2__item--header{
+    grid-area: header;
+}
+.grid-2__item--main{
+    grid-area: main;
+}
+.grid-2__item--aside{
+    grid-area: aside;
+}
+.grid-2__item--footer{
+    grid-area: footer;
+}
+
+/* Упрощенная запись */
+.grid-2 {
+    display: grid;
+    grid-template: 
+    "header header" 1fr 
+    "main aside" 5fr
+    "footer footer" 2fr
+    / 1fr 300px;
+}
+
+.grid-2__item--header {
+    grid-area: header;
+}
+.grid-2__item--main {
+    grid-area: main;
+}
+.grid-2__item--aside {
+    grid-area: aside;
+}
+.grid-2__item--footer {
+    grid-area: footer;
+}
+
+/* ============================================================== */
+
+/* Работа с неявной сеткой. (ячейка, что не вошла в явную таблицу) */
+.grid-3{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+/* Влияет на неявные  ячейки */
+    grid-auto-rows: 400px; /*при (grid-auto-flow: column;) эта строчка не работает*/
+    grid-auto-columns: 300px;
+/* Всё распологается построчно. (row) поумолчанию. */
+    grid-auto-flow: dense;
+/*              ...по столбцам*/
+    /* grid-auto-flow: column; */
+}
+
+/* Выделили для 6й ячейки 2 колонки. (grid-auto-flow: row) должен быть*/
+/* 6я ячейка перескочила на сл.строчку. 7я осталась на месте*/
+/* Но если в (grid-auto-flow) row поменять на dense,
+то 6я переместится на сл.строчку, 7я займёт её место*/
+.grid-3__item--6{
+    grid-column: span 2;
+}
+
+/* ==================================================== */
+
+/* Обращение к каждому элементу по отдельности */
+.grid-4{
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+}
+
+/* Обращаемся к линиям. Располагаем блоки с помощью границ */
+/* Ячейка на своём месте */
+.grid-4__item--3{
+/* 3я ячейка. Границы строки 1 и 2 линия от левого края*/
+    grid-row-start: 1;
+    grid-row-end: 2;
+/*           Границы столбца 3 и 4 линия от верхнего края*/
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+/* Ячейка сдвинута влево */
+.grid-4__item--3{
+/* 3я ячейка. Границы строки 1 и 2 линия от левого края*/
+    grid-row-start: 1;
+    grid-row-end: 2;
+/*           Границы столбца 3 и 4 линия от верхнего края*/
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* Ячейка занимает две ячейки и сдвигает 6ю ячейку из явной таблицы */
+.grid-4__item--3{
+/* 3я ячейка. Границы строки 1 и 2 линия от левого края*/
+    grid-row-start: 1;
+    grid-row-end: 2;
+/*           Границы столбца 3 и 4 линия от верхнего края*/
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* Ячейка занимает две ячейки и сдвигает 6ю ячейку из явной таблицы */
+/* Тоже самое, но короче */
+.grid-4__item--3{
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+}
+
+.grid-4__item--3{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+/* ==================================================== */
+
+/* Называем линии */
+.grid-5{
+    display: grid;
+/* Задаём названия линий */
+    grid-template:  
+    [row1] 1fr [row2] 1fr [row3] / 
+    [col1] 1fr [col2] 1fr [col3] 1fr [col4];
+}
+
+/* Поменяли местами обращаясь к именам линий */
+.grid-5__item--1{
+    grid-row: row2 / row3;
+    grid-column: col2 / col3;
+}
+
+/* ==================================================== */
+
+.grid-6{
+    display: grid;
+/* Задаём названия линий */
+grid-template:  
+[row1] 1fr [row2] 1fr [row3] / 
+[col1] 1fr [col2] 1fr [col3] 1fr [col4];
+}
+
+/* Меняем порядок с помощью (order) */
+.grid-6__item--1{
+order: 1;
+}
+.grid-6__item--2{
+order: 2;
+}
+.grid-6__item--3{
+order: 5;
+}
+.grid-6__item--4{
+order: 4;
+}
+.grid-6__item--5{
+order: 3;
+}
+.grid-6__item--6{
+order: 6;
+}
+
+/* ==================================================== */
+
+/* Выравнивание элементов */
+.grid-7{
+    display: grid;
+/* Задаём названия линий */
+    grid-template:  
+    [row1] 1fr [row2] 1fr [row3] / 
+    [col1] 1fr [col2] 1fr [col3] 1fr [col4];
+
+/* Растягивание контента максимально. (stretch) по умолчанию */
+/*  start - выравнивание по лев.краю
+    center -          ...по центру
+    end -             ...по правому краю */
+    justify-items: center;
+/*  start - выравнивание по верх.краю
+    center -          ...по центру
+    end -             ...по ниж.краю */
+    align-items: center;
+
+/* По горизонтали Варианты: start*/
+    justify-items: start;
+/* По вертикали */
+    align-items: center;
+
+/* Растояние между ячейками */
+row-gap: 20px;
+column-gap: 50px;
+/* Короткая запись */
+grid-gap: 40px 60px;
+
+}
+
+/* Можно менять расположение контента у конкретных элементов */
+.grid-7__item--1{
+order: 1;
+justify-self: center;
+align-self: stretch;
+}
+.grid-7__item--2{
+order: 2;
+}
+.grid-7__item--3{
+order: 3;
+}
+.grid-7__item--4{
+order: 4;
+}
+.grid-7__item--5{
+order: 5;
+}
+.grid-7__item--6{
+order: 6;
+}

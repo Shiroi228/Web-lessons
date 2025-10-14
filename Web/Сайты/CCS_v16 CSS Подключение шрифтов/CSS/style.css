@@ -1,0 +1,28 @@
+/* Скачать шрифты в нужных форматах (можно сразу в woff2) */
+/* Использовать font-face */
+@font-face {
+    font-family: "SuperWebcomicBros";
+    font-weight: 400;
+    font-style: normal;
+    src: local("SuperWebcomicBros"),
+            url(../Fonts/SuperWebcomicBros.woff2) format('.woff2'),
+            url(../Fonts/SuperWebcomicBros.woff) format('.woff'),
+            url(../Fonts/SuperWebcomicBros.eot) format('.eot');
+    font-display: swap;
+}
+.zxc{
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+}
+
+.zxc2{
+    font-size: 1.5rem;
+    font-family: "SuperWebcomicBros" sans-serif;
+    font-weight: 400;
+}
+
+.zxc3{
+    font-size: 1.5rem;
+}
+
+

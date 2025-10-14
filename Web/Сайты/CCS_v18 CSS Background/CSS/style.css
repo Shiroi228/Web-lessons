@@ -1,0 +1,109 @@
+.zxc{
+    width: 1000px;
+    height: 400px;
+    box-shadow: 0px 0px 3px 3px black;
+    border-radius: 5px;
+
+/* Обычный фон */
+    /* background-color: antiquewhite; */
+
+/* Градиент. Цветов может быть много */
+/* Чтобы указать  направление можно использовать градусы (deg)(относительно сверху вниз). */
+background: linear-gradient(90deg, #1aec1a,#b92222,#2d1ccc);
+
+}
+
+.zxc2{
+    width: 1000px;
+    height: 400px;
+    box-shadow: 0px 0px 3px 3px black;
+    border-radius: 5px;
+
+/* Можно указать с какого момента пойдёт чистый цвет добавив проценты */
+background: linear-gradient(90deg, #1aec1a,#b92222 30%,#2d1ccc 70%);
+
+
+}
+
+.zxc3{
+    width: 1000px;
+    height: 400px;
+    box-shadow: 0px 0px 3px 3px black;
+    border-radius: 5px;
+
+/* Градиент по окружности */
+background: radial-gradient(#1aec1a,#2d1ccc,#b92222);
+
+}
+
+.zxc4{
+    width: 1800px;
+    height: 1200px;
+    box-shadow: 0px 0px 3px 3px black;
+    border-radius: 5px;
+
+/* Картинка на фон */
+    background-image:url(https://sun9-8.userapi.com/impg/kK8KUAG69eVs0JEU8Jud26uUUlw3CiFm3ywAeQ/7oUvYk_QiiU.jpg?size=1600x1062&quality=95&sign=049e7492328db2e3c64b2801e5f431b3&type=album);
+/* Отключает повторение */
+    background-repeat: no-repeat;
+/* Перемещение x y */
+    background-position: center 50px;
+}
+
+.zxc5{
+    width: 1800px;
+    height: 1200px;
+    box-shadow: 0px 0px 3px 3px black;
+    border-radius: 5px;
+
+/* Картинка на фон */
+    background-image:url(https://sun9-8.userapi.com/impg/kK8KUAG69eVs0JEU8Jud26uUUlw3CiFm3ywAeQ/7oUvYk_QiiU.jpg?size=1600x1062&quality=95&sign=049e7492328db2e3c64b2801e5f431b3&type=album);
+/* Отключает повторение */
+    background-repeat: no-repeat;
+/* Перемещение x y */
+    background-position: center 50px;
+/* attachment:  scroll - дефолт;
+                fixed - при скроле картинка остается;
+                local - при скроле картинка будет ездить*/
+    background-attachment: local;
+    overflow: auto;
+}
+
+.zxc6{
+    width: 1800px;
+    height: 1200px;
+    box-shadow: 0px 0px 3px 3px black;
+    border-radius: 5px;
+
+/* Картинка на фон */
+    background-image:url(https://sun9-8.userapi.com/impg/kK8KUAG69eVs0JEU8Jud26uUUlw3CiFm3ywAeQ/7oUvYk_QiiU.jpg?size=1600x1062&quality=95&sign=049e7492328db2e3c64b2801e5f431b3&type=album);
+/* Отключает повторение */
+    background-repeat: no-repeat;
+/* size:    auto - дефолт;
+            contain - растягивает максимально до первой границе;
+            cover - полностью заполняет блок, но сохраняет пропорции
+            100px 50% (пара ширины и высоты) - можно указывать конкретные размеры или проценты
+            */
+    background-size: cover;
+
+}
+
+.zxc7{
+    width: 1200px;
+    height: 600px;
+    box-shadow: 0px 0px 3px 3px black;
+    border-radius: 5px;
+
+/* Можно добавлять несколько картинок */
+    background-image:url("../Images/Картиночки/2ZjdOKQhH5I.jpg"), url("../Images/Картиночки/7oUvYk_QiiU.jpg");
+
+/* Отключает повторение */
+    background-repeat: no-repeat;
+/* size:    auto - дефолт;
+            contain - растягивает максимально до первой границе;
+            cover - полностью заполняет блок, но сохраняет пропорции
+            100px 50% (пара ширины и высоты) - можно указывать конкретные размеры или проценты
+            */
+    /* background-size: cover; */
+
+}

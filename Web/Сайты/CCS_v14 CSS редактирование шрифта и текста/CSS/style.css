@@ -1,0 +1,54 @@
+
+a:link{
+    color: white;
+}
+
+a:hover{
+    color: #BBDEFB;
+}
+
+.header{
+    color:a;
+    background: #1E88E5;
+    line-height: 20px;
+
+}
+/* line-height (fh) - высота строки */
+
+.header__table{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+}
+/* font-family (ff) - шрифт */
+/* font-size (fz) - размер шрифта (16px дефолт) */
+/* font-style (fs) - стиль шрифта (italic - курсив) */
+/* font-weight - жирность текста (normal = 400) */
+/* text-decoration - декорации текста (подчёркивание и др.) */
+
+
+main{
+    text-align: justify;
+    text-shadow: 1 2 3  ;
+    text-transform: uppercase;
+    text-indent: 50px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    /* white-space: nowrap; */
+}
+/* text-align - расположить текст по (центру, по лев./прав. краю, по ширине )
+                                     (center,    left/right     ,    justify) */
+/* text-shadow - тень (1,2 - x,y; 3 - прозрачность) */
+/* text-transform - все буквы (большие/маленькие/каждое слово с заглавной буквы)*/
+/* text-inden - отступ */
+/* letter-spacing - расстояние между буквами */
+/* word-spacing - расстояние между словами */
+/* white-space - запрещает тексту переноситься */
+
+.footer{
+    color: antiquewhite;
+    background: #0D47A1;
+}

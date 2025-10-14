@@ -1,0 +1,44 @@
+    <form>
+        <input type="reset">
+        <!-- для type:
+        number - только цифры
+        password - вводимые символы будут как "*"
+        tel - (если заходить с телефона) у пользователя откроется клавиатура с цифрами
+        email - форма для почты
+        search - форма для поиска
+        file - форма для загрузки файла
+        url - форма для ссылок
+        date(datetime-local) - форма для даты (с дополнением времени)
+        month, week, time - месяц, неделя, время
+        radio - форма для кружочка (для выбора какого-либо варианта ответа, например)
+        checkbox - как "radio", только галочки. Можно ставить и убирать. Более удобная форма
+        submit и reset - дублируем вариант "button"
+        datalist - список с вариантами ответов (пример ниже). Можем также написать свой вариант -->
+        <label for="">
+            <br>
+            Поставь галочку
+            <br>
+            <input type="radio" name="nameN">
+            <br>
+            <input type="radio" name="nameN">
+            <br>
+            <input type="radio" name="nameN2">
+            <!-- Атрибут "name" нужен, чтобы каждая галочка работала по отдельности. От кол-ва имён зависит кол-во выборов -->
+        </label>
+        <br>
+        <!-- br - тег для переноса на др строчку -->
+        <input type="checkbox">
+        <br>
+        <input type="checkbox">
+        <br>
+        <input type="checkbox">
+        <br>
+        <input list="list1">
+        <datalist id="list1">
+            <option value="v1">Описание 1</option>
+            <option value="v2">Описание 2</option>
+            <option value="v3">Описание 3</option>
+            <option value="v4">Описание 4</option>
+            </datalit>
+            <button type="reset">Очистить</button>
+    </form>

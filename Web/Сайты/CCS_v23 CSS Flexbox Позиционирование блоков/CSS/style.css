@@ -1,0 +1,239 @@
+
+.zxc{
+    background-color: rgb(201, 104, 104);
+    padding: 50px;
+}
+
+.flexbox{
+    padding: 50px; 
+    background-color: antiquewhite;
+}
+
+.flexbox__item{
+    background-color: rgb(131, 67, 67);
+    padding: 50px;
+}
+
+.flexbox__item-content{
+    background-color: rgb(75, 38, 38);
+    height: 200px;
+    width: 200px;
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+    padding: 50px;
+
+}
+
+.flexbox__item-content2{
+    background-color: rgb(75, 38, 38);
+    height: 300px;
+    width: 200px;
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+    padding: 50px;
+
+}
+
+.zxc2{
+    background-color: rgb(201, 104, 104);
+    padding: 50px;
+}
+
+.flexbox2{
+    padding: 50px; 
+    background-color: antiquewhite;
+}
+
+.flexbox__item2{
+    background-color: rgb(131, 67, 67);
+    padding: 50px;
+}
+
+.flexbox__item-content2{
+    background-color: rgb(75, 38, 38);
+    height: 200px;
+    width: 200px;
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+    padding: 50px;
+
+}
+
+.flexbox__item-content2_2{
+    background-color: rgb(75, 38, 38);
+    height: 300px;
+    width: 200px;
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+    padding: 50px;
+
+}
+
+.zxc3{
+    background-color: rgb(201, 104, 104);
+    padding: 50px;
+}
+
+.flexbox3{
+    padding: 50px; 
+    background-color: antiquewhite;
+}
+
+.flexbox__item3{
+    background-color: rgb(131, 67, 67);
+    padding: 50px;
+}
+
+.flexbox__item-content3{
+    background-color: rgb(75, 38, 38);
+    height: 200px;
+    width: 200px;
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+    padding: 50px;
+
+}
+
+.flexbox__item-content3_2{
+    background-color: rgb(75, 38, 38);
+    height: 300px;
+    width: 200px;
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+    padding: 50px;
+
+}
+
+.zxc4{
+    background-color: rgb(201, 104, 104);
+    padding: 50px;
+}
+
+.flexbox4{
+    padding: 50px; 
+    background-color: antiquewhite;
+}
+
+.flexbox__item4{
+    background-color: rgb(131, 67, 67);
+    padding: 50px;
+}
+
+.flexbox__item-content4{
+    background-color: rgb(75, 38, 38);
+    height: 200px;
+    width: 200px;
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+    padding: 50px;
+
+}
+
+.flexbox__item-content4_2{
+    background-color: rgb(75, 38, 38);
+    height: 300px;
+    width: 200px;
+    color: wheat;
+    text-align: center;
+    font-size: 3rem;
+    padding: 50px;
+
+}
+/* ------------------------------------------------------- */
+
+
+.flexbox{
+/* Выстраивает все блоки в линию */
+    display: flex;
+
+    justify-content: flex-start; /* Выравнивание по левому краю */
+    justify-content: flex-end; /*Выравнивание по правому краю*/
+    justify-content: center; /*Выравнивание по центру*/
+    justify-content: space-evenly; /*Добавляет между блоками пространство*/
+    justify-content: space-around; /*Добавляет вокруг блоков пространство*/
+    justify-content: space-between; /*Выравнивание по ширине*/
+
+
+}
+
+.flexbox2{
+/* Выстраивает все блоки в линию */
+    display: flex;
+
+    justify-content: space-between; /*Выравнивание по ширине*/
+
+    align-items: flex-start; /*Выравнивание по верху*/
+    align-items: flex-end; /*Выравнивание по низу*/
+    align-items: center; /*Выравнивание по центру*/
+
+    flex-wrap: nowrap; /*(Поумолчанию) При уменьшении ширины экрана не переносит блоки*/
+    flex-wrap: wrap; /*При уменьшении ширины экрана переносит блоки ниже*/
+    flex-wrap: wrap-reverse; /*При уменьшении ширины экрана переносит блоки выше*/
+
+}
+
+.flexbox3{
+/* Выстраивает все блоки в линию */
+    display: flex;
+    justify-content: space-between; /*Выравнивание по ширине*/
+}
+
+/* Псевдокласс. Обращается только к первому элементу */
+.flexbox__item3:first-child{
+    align-self: end;
+
+/* order - порядок элемента */
+    order: 3;
+}
+
+/* Псевдокласс. Обращается только ко второму (2) элементу */
+.flexbox__item3:nth-child(2){
+    align-self: center;
+    order: 1;
+}
+
+/* Псевдокласс. Обращается только к последнему элементу */
+.flexbox__item3:last-child{
+    align-self: center;
+    order: 2;
+}
+
+.flexbox4{
+/* Выстраивает все блоки в линию */
+    display: flex;
+    justify-content: space-between; /*Выравнивание по ширине*/
+    flex-direction: row; /*объекты находятся слева направо*/
+    flex-direction: row-reverse; /*объекты находятся справа наслево */
+
+    flex-direction: column; /*объекты находятся сверху вниз */
+    flex-direction: column-reverse; /*объекты находятся снизу вверх */
+}
+
+.flexbox__item4{
+/* Указать размеры элементов */
+    flex-basis: 300px;
+}
+
+/* Псевдокласс. Обращается только к первому элементу */
+.flexbox__item4:first-child{
+    flex: 1 0 300px; /*Универсально: grow shrink basis*/
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+}
+
+/* Псевдокласс. Обращается только ко второму (2) элементу */
+.flexbox__item4:nth-child(2){
+
+}
+
+/* Псевдокласс. Обращается только к последнему элементу */
+.flexbox__item4:last-child{
+
+}

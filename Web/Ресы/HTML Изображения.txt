@@ -1,0 +1,23 @@
+Строчиный тип:
+    <img src="https://img2.goodfon.ru/original/1280x720/8/be/monako-monaco-monte-carlo.jpg" alt="Монако">
+// alt - необязательный парамметр. В случае неправильно указанного пути скажет что там было.
+
+Можно настроить под разрешения устройств
+    <picture>
+        <source media="(min-width: 1000)" srcset="https://img2.goodfon.ru/original/1920x1080/8/be/monako-monaco-monte-carlo.jpg" sizes="">
+        <img src="https://img2.goodfon.ru/original/1280x720/8/be/monako-monaco-monte-carlo.jpg" alt="Монако">
+
+    </picture>
+// source - условие.
+
+Картинка с подписью
+    <figure>
+        <img src="https://img2.goodfon.ru/original/1280x720/8/be/monako-monaco-monte-carlo.jpg" alt="Монако">
+        <figcaption>
+            На картинке Монако 
+            <!-- Описание картинки -->
+        </figcaption>
+
+    </figure>
+// figcaption - описание картинки
+

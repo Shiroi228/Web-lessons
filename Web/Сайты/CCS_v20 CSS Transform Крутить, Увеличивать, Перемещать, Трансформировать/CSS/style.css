@@ -1,0 +1,75 @@
+.main{
+    background-color: rgb(78, 78, 78);
+    width: 100%;
+    height: 700px;
+    position: static;
+}
+
+.block{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 25%;
+    left: 35%;
+}
+.red1{
+    background-color: rgb(247, 80, 80);
+
+/* Перемещение по осям x,y */
+    transform: translate(-40px, 30px);
+}
+
+.blue1{
+    background-color: rgb(69, 69, 218);
+
+/* Перемещение только по оси Y */
+    transform: translateY(-60px);
+
+}
+
+.red2{
+    background-color: rgb(247, 80, 80);
+
+/* Поворот на 50 градусов */
+    transform: rotate(50deg);
+}
+
+.blue2{
+    background-color: rgb(69, 69, 218);
+
+/* Поворот на 50 градусов только по оси X*/
+    transform: rotateX(50deg);
+}
+
+.red3{
+    background-color: rgb(247, 80, 80);
+
+/* Увеличить объект в 2 раза */
+    transform: scale(2);
+}
+
+.blue3{
+    background-color: rgb(69, 69, 218);
+
+/* Увеличить объект в 2 раза только по X*/
+    transform: scaleX(2);
+
+}
+
+.red4{
+    background-color: rgb(247, 80, 80);
+
+/* Как-то крутит по оси X,Y */
+    transform: skew(20deg, 30deg);
+}
+
+.blue4{
+    background-color: rgb(69, 69, 218);
+
+/* Указываем точку, во круг которой будем выполнять действия */
+/* left и top - это X и Y */
+    transform-origin: left top;
+    transform: rotate(45deg);
+
+}

@@ -1,0 +1,121 @@
+
+.zxc__content{  
+/*  На (padding) (background-color) распространяется
+    На (margin) (background-color) не распространяется */
+    background-color: rgb(177, 142, 142);
+    font-size: 1.5em;
+    font-family: 'Lobster', cursive;
+    padding: 50px;
+    margin: 50px;
+
+/* У (padding) есть атрибуты для каждой стороны:
+    top, right, bottom, left */
+    padding-left: 200px;
+    padding-top: 10px;
+
+    /* Для экономии места */
+    padding: 10px 100px 150px 200px;
+
+    /* Эквивалентно для margin */
+    margin: 50px 120px 70px 220px;
+/* margin наслаиваются друг на друга, если встречаются
+    два объекта с margin */
+
+    background-image: url(https://megaribolov.ru/images/siteimage/opisanie_vodoemov/enciklopediya_okeanov/atlanticheskiy_okean/Atlanticheskiy_okean_photographiya_10.jpg);
+    
+    
+    width: 400px;
+    height: 400px;
+    overflow: visible;
+/*  (overflow: visible)Если размеры элементы меньше, чем кол-во
+    текста, то он будет вылезать за рамки */
+
+    overflow: hidden;
+/*  (overflow: hidden)Если размеры элементы меньше, чем кол-во
+    текста, то текст обрежется */  
+
+    overflow: auto;
+/*  (overflow: auto)Если размеры элементы меньше, чем кол-во
+    текста, то появляется скрол бар */
+}
+
+.zxc2_inline{
+    /* Паддинги и марджелы к инлайновым элементам лучше не применять */
+    /* На инлайновые элементы мало что работает */
+    color: aqua;
+    width: 400px;
+    height: 400px;
+    /* Не работает. Но если сделать из него блочный элемент,
+    то всё заработает */
+    display: block;
+
+}
+
+.zxc3{
+    font-size: 1.5rem;
+    margin: 50px;
+    padding: 10px;
+
+/* Граница */
+    border: 10px solid #000;
+    
+/* Равносильно */
+    /* border-width: 3px;
+    border-style: solid;
+    border-color: #000; */
+
+/* Можно задать краницу только с определенной стороны */
+    /* border-top: 8px solid #000;
+    border-left: 8px solid red; */
+
+/* border-style */ /*Стиль границы*/
+    border-style: dashed; /*ПУНКТИР ЛАЙН*/
+    border-style: dotted; /*ПУНКТИР КРУЖОЧЕК*/
+    border-style: double; /*ДВОЙНАЯ ЛИНИЯ*/
+
+/* box-shadow */ /*Тень блока*/
+    box-shadow: 8px 8px 8px 8px rgb(114, 114, 114);
+/* inset делает тень внутри блока */
+    box-shadow: inset 8px 8px 8px 8px rgb(114, 114, 114);
+/* Если прописывать несколько раз, то будет эффект наложения */
+    box-shadow:  3px  3px 5px 0px rgb(255, 0, 0),
+                 6px  6px 5px 0px rgb(255, 145, 0),
+                 9px  9px 5px 0px rgb(255, 255, 0),
+                12px 12px 5px 0px rgb(18, 153, 0),
+                15px 15px 5px 0px rgb(0, 174, 255),
+                18px 18px 5px 0px rgb(0, 0, 255),
+                21px 21px 5px 0px rgb(150, 0, 255);
+
+}
+
+.squere{
+    width: 25rem;
+    height: 25rem;
+    background-color: aqua;
+    /* border-radius: 50%; */
+
+    /* Изначально квадрат имеет блочную структуру */
+    display: inline-block;
+    /* Теперь это блок, но он не занимает всю строку.
+    Можно ставить несколько объектов подряд на одной строке */
+
+}
+
+.squere2{
+    width: 25rem;
+    height: 25rem;
+    background-color: aqua;
+    /* border-radius: 50%; */
+
+    /* Изначально квадрат имеет блочную структуру */
+    display: inline-block;
+    /* Теперь это блок, но он не занимает всю строку.
+    Можно ставить несколько объектов подряд на одной строке */
+
+/* Прозрачность */
+    opacity: 30%;
+
+/* Тоже прозрачность, но другая */
+    /* visibility: hidden; */
+    
+}

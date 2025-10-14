@@ -1,0 +1,22 @@
+.wrapper{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(208, 209, 252);
+    color: white;
+}
+
+.task{
+    text-align: right;
+    background-color: rgb(209, 154, 154);
+    background-color: rgb(236, 193, 193);
+    padding-right: 2px;
+
+}
+
+.button{
+    border-radius: 3px;
+    background-color: rgb(226, 187, 187);
+    border: 3px solid black;
+    background-color: rgb(241, 215, 215);
+
+}

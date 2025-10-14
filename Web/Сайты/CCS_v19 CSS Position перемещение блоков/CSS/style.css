@@ -1,0 +1,55 @@
+.container{
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 1017px;
+    height: 1017px;
+    box-shadow: 0px 0px 3px 3px #333;
+}
+
+.block{
+    box-shadow: inset 0px 0px 3px 3px #333;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: inline-block;
+    
+}
+
+.Red{
+    background-color: red;
+
+/* Позиция */
+    position: relative;
+    top: 100px;
+    right: auto;
+    left: auto;
+    bottom: auto;
+/* Наложение слоёв */
+    z-index: auto;
+}
+
+.Blue{
+    background-color: blue;
+/* Перемещение за рамки блока */
+/* Перемещение относительно последнего указанного блока relative */
+    position: absolute;
+    right: 500px;
+}
+
+.Black{
+    background-color: black;
+/* Постоянно находится в одном и том же месте на экране */
+    position: fixed;
+    top: 200px;
+}
+
+.Green{
+    background-color: green;
+/* Будет следовать за экраном пока находится в блоке родителе */
+    position: sticky;
+    top: 0px;
+}
+
+.Orange{
+    background-color: orange;
+}

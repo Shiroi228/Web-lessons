@@ -1,0 +1,95 @@
+
+.zxc{
+    margin: 50px;
+    background-color: #444;
+    height: 500px;
+    width: 2000px;
+}
+
+.container{
+    width: 1800px;
+    height: 200px;
+    background-color: rgb(151, 151, 151);
+
+    position: relative;
+    top: 25%;
+    left: 5%;
+}
+
+.block{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+
+/* Позиция относительно родительского блока (relative) */
+    position: absolute;
+
+    /* Анимация */
+    /* animation:
+    Имя
+    Время_анимации(s) 
+    Тип анимации 
+    Кол-во 
+    Дирекшн
+    Задержка(s)
+    Филмод; */
+
+/* Можно добавлять много анимаций  */
+    animation: move-block 1s ease infinite alternate 2s forwards, color-block 1s infinite;
+
+/* animation-name: move-block; - имя анимации*/
+/* animation-duration: 3s; - время анимации*/
+/* animation-timing-function: ease; - тип анимации*/
+/* animation-iteration-count: 3; - кол-во повторений,
+значение (infinite) делает цикл бесконечным */
+/* animation-direction: alternate; - каждая чётная итерация обратная 
+                alternate-reverse; - каждая нечётная итерация обратная
+                            reverse; - просто в обратном порядке
+                            normal;- поумолчанию
+                */
+/* animation-delay: 2s; - Задержка */
+/* animation-fill-mode: forwards; - При 100% останавливается 
+                            none; - Поумолчанию*/
+}
+
+/* При наведении на блок анимация ставится на паузу */
+/* .block:hover{
+    animation-play-state: paused;
+} */
+
+/* При наведении на блок анимация начинается заново */
+/* .block:hover{
+    animation-name: none;
+} */
+
+/* Кейфреймы.
+move-block - имя кейфрейма
+
+from - первоначальное состояние объекта
+to - окончательное состояние объекта
+
+Но можно указывать в процентах
+0% - начало
+40%,60% - промежуточные значения
+100% - конец*/
+@keyframes move-block{
+    0%{
+        left: 0%;
+    }
+    50%{
+        border-radius: 50%;
+    }
+    100%{
+        left: calc(100% - 200px);
+        background-color: rgb(255, 0, 0);
+    }
+}
+
+@keyframes color-block{
+    20%{
+        background-color: blue;
+    }
+    80%{
+        background-color: aqua;
+    }
+}

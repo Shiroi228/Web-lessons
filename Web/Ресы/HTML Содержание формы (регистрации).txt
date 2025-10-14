@@ -1,0 +1,62 @@
+    <!-- Версия формы без группировки -->
+    <form autocomplete="on" name="form1">
+
+    <!-- Первый способ подписать элемент. Использовать атрибут "for" -->
+        <label for="#Логин">Логин</label>
+        <!-- label - описание элемента. В for при обращении к id не забывать "#" -->
+        <input id="Логин" type="text">
+        <!-- input - поле ввода информации(Логин, пароль)  -->
+
+
+        <label for="#gender">Пол</label>
+        <select id="gender"  name="gender">
+            <option value="">-- Не выбрано --</option>
+            <option value="M">Мужской</option>
+            <option value="W">Женский</option>
+        </select>
+        <!-- select - выпадающее меню -->
+
+    <!-- Второй способ подписать элемент. Вставить элемент внутри label -->
+        <label>
+            Ваша почта
+            <textarea cols="20" rows="1"></textarea>
+            <!-- textarea - поле ввода большого кол-ва информации -->
+            <!-- cols и rows - размеры поля -->
+        </label>
+
+        <button type="submit">Зарегистрироваться</button>
+        <!-- button - кнопка. -->
+
+    </form>
+    <!-- Атрибут form "autocomplete" отвечает за автозаполнение формы -->
+    <!-- Атрибут form "name" отвечает за имя формы. Имя не должно повторяться -->
+
+    <!-- Форма с группировкой -->
+    <form name="form2">
+        <fieldset>
+            <legend>Введите логин и пароль</legend>
+            <!-- legend - тег для шапки fieldset. Должен быть всегда на первом месте -->
+            <label>
+                Логин
+                <input type="text">
+            </label>
+            <label>
+                Пароль
+                <input type="text">
+            </label>
+        </fieldset>
+        <!-- fieldset - для группировки элементов -->
+
+        <fieldset>
+            <legend>Второе поле</legend>
+            <label for="#gender">Пол</label>
+            <select id="gender"  name="gender">
+                <option value="">-- Не выбрано --</option>
+                <option value="M">Мужской</option>
+                <option value="W">Женский</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Подтвердить</button>
+        <button type="reset">Стереть</button>
+    </form>

@@ -1,0 +1,32 @@
+Ненумерованный список
+    <ul>
+        <li>zxc</li>
+        <li>zxc</li>
+        <li>zxc</li>
+    </ul>
+
+Нумерованный список
+    <ol>
+        <li>zxc</li>
+        <li>zxc</li>
+        <li>zxc</li>
+    </ol>
+
+У списков есть атрибуты. 
+Начинать с 10 позиции.
+    <ol start="10">
+        <li>zxc</li>
+        <li>zxc</li>
+        <li>zxc</li>
+    </ol>
+reversed повернет в обратную сторону
+    <ol start="10" reversed>
+        <li>zxc</li>
+        <li>zxc</li>
+        <li>zxc</li>
+    </ol>
+Список определений
+    <dl>
+        <dt>zxc</dt> // определение
+        <dd>zxczxc</dd> // пояснение
+    </dl>
